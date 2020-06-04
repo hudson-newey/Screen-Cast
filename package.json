@@ -1,0 +1,16 @@
+{
+  "name": "screen-cast",
+  "version": "1.0.0",
+  "description": "Network webpage sending",
+  "main": "src/window.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/Grathium-Industries/Screen-Cast",
+  "author": "Grathium Industries",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "electron": "^3.0.9",
+    "express": "^4.16.4"
+  }
+}

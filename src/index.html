@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Screen-Cast</title>
+	<style type="text/css">
+		.content {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			background-color: #000;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.container {
+			-ms-overflow-style: none;
+			scrollbar-width: none;
+			overflow: -moz-scrollbars-none;
+		}
+		.container::-webkit-scrollbar {
+			display: none;
+		}
+
+		.large-header {
+			width: 100%;
+			z-index: 1;
+		}
+
+		.demo .large-header {
+			position: absolute;
+			z-index: -1;
+			top: 0px;
+		}
+
+		.main-title {
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			color: #F9F1E9;
+			text-align: center;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate3d(-50%, -50%, 0);
+			transform: translate3d(-50%, -50%, 0);
+			text-shadow: 2px 1px black;
+			transition: 0.7s;
+			/* disable selecting text */
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		.main-title:hover {
+			opacity: 0.20;
+			filter: alpha(opacity=20);
+		}
+
+		#title {
+			text-transform: uppercase;
+			font-size: 2.2em;
+			letter-spacing: 0.1em;
+		}
+
+		.main-title .thin {
+			font-weight: 200;
+		}
+
+		@media only screen and (max-width: 768px) {
+			.demo .main-title {
+				font-size: 3em;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="background" class="content">
+        <div id="large-header" class="large-header">
+          <canvas id="demo-canvas"></canvas>
+          <div class="main-title" class="hiding"><i id="title"><h1><span class="thin">Grathium</span> Industries</h1></i></div>
+          <!--<div id="instant-answers" class="instant-answers" class="hiding"></div>-->
+        </div>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+	const backgroundCount = 8;
+	document.getElementById('background').style.backgroundImage = "url('https://github.com/Grathium-Industries/NeonX2.0/raw/master/NeonX/backgrounds/" + Math.ceil(Math.random() * backgroundCount) + ".png')";
+</script>
