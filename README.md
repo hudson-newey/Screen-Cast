@@ -8,5 +8,5 @@
 * Go-Lang
 
 #### To use
-> to install dependencies "**npm install**"
+> to install dependencies "**npm install**"  
 > run "**npm starts**"
