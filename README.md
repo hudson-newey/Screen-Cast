@@ -1,5 +1,4 @@
 # **_Screen Cast_**  
-### by: **_Hudson Newey_**
 ---
 
 #### Created with
