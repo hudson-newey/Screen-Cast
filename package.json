@@ -6,8 +6,8 @@
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/Grathium-Industries/Screen-Cast",
-  "author": "Grathium Industries",
+  "repository": "https://github.com/Hudson-Newey/Screen-Cast",
+  "author": "Hudson Newey",
   "dependencies": {
     "ejs": "^3.1.7",
     "electron": "^15.5.5",
