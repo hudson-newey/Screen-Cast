@@ -9,14 +9,13 @@ import (
 )
 
 func main() {
-	fmt.Println("Screen-Cast server IP,")
+	fmt.Println("Screen-Cast server IP & Port,")
 	server := input()
 	clearScreen()
 
 	fmt.Println("Website to Send to Screen-Cast,")
-	for {
-		sendMessage(server, input())
-	}
+	requestedWebsite := input()
+	sendMessage(server, requestedWebsite)
 }
 
 func input() string {
@@ -29,7 +28,7 @@ func input() string {
 }
 
 func sendMessage(server string, content string) {
-	url := server + "/?q=" + content
+	url := "http://" + server + "/?q=" + content
 	resp, err := http.Get(url)
 	// handle the error if there is one
 	if err != nil {

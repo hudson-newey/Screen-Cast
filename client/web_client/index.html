@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Screen Cast Client</title>
+
+  <style>
+    iframe {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 0px;
+      height: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Screen Cast</h1>
+  
+  <h2>Please input Screen Cast Screen IP & Port</h2>
+  <input id="screencast-ip" type="text" value="127.0.0.1:8080" placeholder="Screen Cast IP & Port" />
+
+  <br>
+  <h2>Please Input Website URL for Screen Cast</h2>
+  <input id="website-url" type="text" placeholder="Website URL" />
+
+  <button id="action-btn" onclick="changeWebsite();">Send Request</button>
+
+  <h3>
+    <i id="last-request-text">
+      Last Request: None
+    </i>
+  </h3>
+
+  <iframe id="http-socket" src="" frameborder="0"></iframe>
+  
+  <footer>
+    <script>
+      const requestedWebsiteInput = document.getElementById("website-url");
+
+      let changeWebsite = () => {
+        const screenCastIP = document.getElementById("screencast-ip").value;
+        const requestedWebsite = requestedWebsiteInput.value;
+        
+        document.getElementById("http-socket").src = `http://${screenCastIP}/?q=${requestedWebsite}`;
+
+        document.getElementById("last-request-text").innerText = `Last Request: ${requestedWebsite}`;
+        console.log(`Sent request for webpage: ${requestedWebsite}`);
+      }
+
+      requestedWebsiteInput.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+          document.getElementById("action-btn").click();
+        }
+      });
+    </script>
+  </footer>
+</body>
+</html>

@@ -83,7 +83,6 @@
         <div id="large-header" class="large-header">
           <canvas id="demo-canvas"></canvas>
           <div class="main-title" class="hiding"><i id="title"><h1><span class="thin">Screen</span> Cast</h1></i></div>
-          <!--<div id="instant-answers" class="instant-answers" class="hiding"></div>-->
         </div>
     </div>
 </body>
@@ -91,5 +90,6 @@
 
 <script type="text/javascript">
 	const backgroundCount = 8;
-	document.getElementById('background').style.backgroundImage = "url('https://github.com/Hudson-Newey/NeonX2.0/raw/master/NeonX/backgrounds/" + Math.ceil(Math.random() * backgroundCount) + ".png')";
+	const randomBackgroundNumber = Math.ceil(Math.random() * backgroundCount);
+	document.getElementById("background").style.backgroundImage = `url("https://github.com/Grathium-Industries/NeonX2.0/raw/main/NeonX/backgrounds/${randomBackgroundNumber}.png")`;
 </script>

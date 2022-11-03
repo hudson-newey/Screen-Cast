@@ -1,10 +1,11 @@
 # **_Screen Cast_**  
+A simple alternative to Chromecast which can run on a Raspberry pi
 ---
 
 #### Created with
-* ElectronJS
-* ExpressJS
-* Go-Lang
+* ElectronJS (screen)
+* ExpressJS (screen)
+* Go-Lang (client)
 
 #### To use
 > to install dependencies "**npm install**"  

@@ -2,7 +2,7 @@
   "name": "screen-cast",
   "version": "1.0.0",
   "description": "Network webpage sending",
-  "main": "src/window.js",
+  "main": "src/dist/window.js",
   "scripts": {
     "start": "electron ."
   },
@@ -11,6 +11,7 @@
   "dependencies": {
     "ejs": "^3.1.7",
     "electron": "^15.5.5",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "request": "^2.88.2"
   }
 }
