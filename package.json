@@ -10,7 +10,7 @@
   "author": "Hudson Newey",
   "dependencies": {
     "ejs": "^3.1.7",
-    "electron": "^22.3.24",
+    "electron": "^22.3.25",
     "express": "^4.16.4",
     "request": "^2.88.2"
   }
