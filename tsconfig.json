@@ -1,14 +1,1 @@
-{
-  "compilerOptions": {
-      "baseUrl": "./",
-      "newLine": "lf",
-      "module": "ES2022",
-      "noImplicitAny": true,
-      "removeComments": true,
-      "preserveConstEnums": true,
-      "sourceMap": false,
-      "strict": true,
-      "declaration": false,
-  },
-  "include": ["**/*"]
-}
+

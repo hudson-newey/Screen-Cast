@@ -2,8 +2,9 @@
   "name": "screen-cast",
   "version": "1.0.0",
   "description": "Network webpage sending",
-  "main": "src/dist/window.js",
+  "main": "src/window.js",
   "scripts": {
+    "build": "tsc",
     "start": "electron ."
   },
   "repository": "https://github.com/Hudson-Newey/Screen-Cast",
@@ -13,5 +14,8 @@
     "electron": "^22.3.25",
     "express": "^4.16.4",
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7"
   }
 }

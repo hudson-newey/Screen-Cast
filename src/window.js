@@ -1,11 +1,9 @@
-const path: any = require("path");
-const request: any = require("request");
-const express: any = require("express");
-const expressApp: any = express();
-
+const path = require("path");
+const express = require("express");
+const expressApp = express();
 const { BrowserWindow, app } = require("electron");
 
-const SERVER_PORT: number = 8080;
+const SERVER_PORT = 8080;
 let mainWindow = null;
 
 function main() {
@@ -20,7 +18,7 @@ function main() {
     mainWindow = null;
   });
 
-  expressApp.get("/", function(req: any, res: any) {
+  expressApp.get("/", function(req, res) {
 	if (req.query.q != null && req.query.q != "") {
 		// load to a website
 		mainWindow.loadURL(req.query.q);
